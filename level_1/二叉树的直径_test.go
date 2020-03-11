@@ -21,16 +21,12 @@ func TestDiameterOfBinaryTree(t *testing.T) {
 		},
 		Right: &TreeNode{
 			Val:   3,
-			Left:  &TreeNode{
-				Val:   4,
-				Left: nil,
-				Right: nil,
-			},
+			Left:  nil,
 			Right: nil,
 		},
 	}
 
-	num := DiameterOfBinaryTree(root)
+	num := diameterOfBinaryTree(root)
 
 	t.Log("num:", num)
 }
